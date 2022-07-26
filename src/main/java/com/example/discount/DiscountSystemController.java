@@ -12,7 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 
-public class HelloController {
+public class DiscountSystemController {
 
     @FXML
     private ResourceBundle resources;
@@ -42,7 +42,7 @@ public class HelloController {
     private Button searchButton;
 
     //Получение списка клиентов
-    ArrayList<Client> clients = HelloApplication.clients();
+    ArrayList<Client> clients = DiscountSystem.clients();
 
     //Функция получает из TextField введённое число и увеличивает баллы
     @FXML
@@ -83,13 +83,13 @@ public class HelloController {
 
     @FXML
     void initialize() {
-        assert AddButton != null : "fx:id=\"AddButton\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert AmountOfPoints != null : "fx:id=\"AmountOfPoints\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert FullName != null : "fx:id=\"FullName\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert InputPhoneNumber != null : "fx:id=\"InputPhoneNumber\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert InputPoints != null : "fx:id=\"InputPoints\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert RemoveButton != null : "fx:id=\"RemoveButton\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert searchButton != null : "fx:id=\"searchButton\" was not injected: check your FXML file 'hello-view.fxml'.";
+        assert AddButton != null : "fx:id=\"AddButton\" was not injected: check your FXML file 'discount-system-view.fxml'.";
+        assert AmountOfPoints != null : "fx:id=\"AmountOfPoints\" was not injected: check your FXML file 'discount-system-view.fxml'.";
+        assert FullName != null : "fx:id=\"FullName\" was not injected: check your FXML file 'discount-system-view.fxml'.";
+        assert InputPhoneNumber != null : "fx:id=\"InputPhoneNumber\" was not injected: check your FXML file 'discount-system-view.fxml'.";
+        assert InputPoints != null : "fx:id=\"InputPoints\" was not injected: check your FXML file 'discount-system-view.fxml'.";
+        assert RemoveButton != null : "fx:id=\"RemoveButton\" was not injected: check your FXML file 'discount-system-view.fxml'.";
+        assert searchButton != null : "fx:id=\"searchButton\" was not injected: check your FXML file 'discount-system-view.fxml'.";
     }
 
 }

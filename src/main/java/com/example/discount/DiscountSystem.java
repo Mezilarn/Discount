@@ -8,10 +8,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class HelloApplication extends Application {
+public class DiscountSystem extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(DiscountSystem.class.getResource("discount-system-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 250, 281);
         stage.setTitle("Дисконтная система");
         stage.setScene(scene);
@@ -27,7 +27,7 @@ public class HelloApplication extends Application {
         Client secondClient = new Client(1, "Алексеев", "Алексей", "Алексеевич", "79526345647", 1000);
         Client thirdClient = new Client(1, "Петров", "Петр", "Петрович", "79632456751", 5);
 
-        ArrayList<Client> clients = new ArrayList<Client>();
+        ArrayList<Client> clients = new ArrayList<>();
         clients.add(firstClient);
         clients.add(secondClient);
         clients.add(thirdClient);
